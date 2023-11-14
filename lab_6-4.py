@@ -11,15 +11,27 @@ Use a method to make a copy of this list and store it in a different variable.
 Use a method to order this second list in reverse alphabetical order.
 """
 #Author: Andrew Tkacs
- 
+
+#Initial List
+
 subjects =["math", "English", "Science"]
+
+#adding a variable
 
 subjects.extend (["history"])
 
+#return shallow copy of list
+
 english_subjects = subjects.copy()
+
+#sort the list (by default this functions sorts it alphabetically)
 
 subjects.sort()
 
+#new variable making a copy of the list
 
+subjectscopy = subjects.copy()
 
-print (subjects)
+#reverse order the second list
+
+subjectscopy.reverse()
